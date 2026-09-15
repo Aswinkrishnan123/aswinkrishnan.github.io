@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="BATRECON, Aswin Krishnan. Cybersecurity, software, IoT and experimental builds.">
+  <title>BATRECON | Aswin Krishnan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="noise"></div>
+  <div class="cursor cursor-dot"></div>
+  <div class="cursor cursor-ring"></div>
+  <div class="scroll-progress"></div>
+
+  <nav class="nav" id="nav">
+    <a href="#home" class="brand magnetic" aria-label="BATRECON home">
+      <span class="brand-mark">A</span>
+      <span class="brand-text">BAT<span>_</span>RECON</span>
+    </a>
+
+    <button class="menu-toggle magnetic" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <div class="nav-links">
+      <a href="#about">01 / ABOUT</a>
+      <a href="#work">02 / WORK</a>
+      <a href="#skills">03 / STACK</a>
+      <a href="#contact">04 / CONTACT</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <canvas id="particles"></canvas>
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-a"></div>
+      <div class="hero-glow hero-glow-b"></div>
+
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">SYSTEM ONLINE / PORTFOLIO 2026</p>
+        <h1 class="hero-title reveal">
+          <span class="thin">I BUILD</span>
+          <span class="outline">THINGS</span>
+          <span class="accent">THAT MATTER.</span>
+        </h1>
+
+        <div class="hero-sub reveal">
+          <span class="typing-prefix">I'M</span>
+          <span id="typewriter">ASWIN KRISHNAN</span><span class="caret">_</span>
+        </div>
+
+        <p class="hero-copy reveal">
+          Computer science student, builder and cybersecurity enthusiast.
+          I turn ideas into interfaces, systems and experiments.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#work" class="btn btn-primary magnetic">EXPLORE WORK <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="#contact" class="btn btn-ghost magnetic">CONTACT ME</a>
+        </div>
+      </div>
+
+      <div class="hero-meta reveal">
+        <span>INDIA / KERALA</span>
+        <span>SCROLL TO DISCOVER <i class="fa-solid fa-arrow-down"></i></span>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-number">01</div>
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">PROFILE</p>
+          <h2>NOT JUST A<br><span>DEVELOPER.</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-visual reveal tilt">
+            <div class="visual-frame">
+              <img src="assets/about.png" alt="BATRECON artwork">
+              <div class="scanline"></div>
+              <span class="frame-label">IDENTITY // BATRECON</span>
+            </div>
+            <div class="floating-chip chip-one">BUILD / BREAK / REPEAT</div>
+            <div class="floating-chip chip-two">NO FACE. JUST WORK.</div>
+          </div>
+
+          <div class="about-copy">
+            <p class="big-copy reveal">
+              I like the space where <strong>software, cybersecurity, hardware and design</strong>
+              collide.
+            </p>
+            <p class="reveal">
+              My old portfolio was a basic single-page introduction. This version is deliberately
+              more ambitious, it treats the portfolio itself as a product. The goal is simple:
+              make the work feel sharp before the visitor reads a single paragraph.
+            </p>
+
+            <div class="stats reveal">
+              <div><strong>01</strong><span>FINAL YEAR<br>PROJECT</span></div>
+              <div><strong>04+</strong><span>TECH<br>DOMAINS</span></div>
+              <div><strong>∞</strong><span>IDEAS TO<br>BUILD</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section work">
+      <div class="section-number">02</div>
+      <div class="container">
+        <div class="section-heading split reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>PROJECTS<br><span>IN MOTION.</span></h2>
+          </div>
+          <p class="heading-note">A few builds and experiments that show what I actually like working on.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal tilt" data-project="01">
+            <div class="project-image project-cyan">
+              <div class="project-code">
+                <span>ESP32</span><span>FASTAPI</span><span>FIREBASE</span><span>ML</span>
+              </div>
+              <div class="project-orbit"></div>
+              <i class="fa-solid fa-droplet project-icon"></i>
+            </div>
+            <div class="project-info">
+              <p class="project-index">01 / IOT + ML</p>
+              <h3>SAFEWAVE</h3>
+              <p>
+                Smart environmental monitoring and risk prediction for freshwater.
+                Sensor data, cloud processing and a Random Forest model turn environmental
+                conditions into an interpretable risk signal.
+              </p>
+              <div class="tags"><span>ESP32</span><span>PYTHON</span><span>FASTAPI</span><span>FIREBASE</span></div>
+            </div>
+            <a class="project-arrow" href="#contact" aria-label="Ask about SAFEWAVE"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal tilt" data-project="02">
+            <div class="project-image project-red">
+              <div class="terminal">
+                <span>$ whoami</span>
+                <strong>security_learner</strong>
+                <span>$ nmap / burp / wireshark</span>
+                <strong class="blink">_</strong>
+              </div>
+              <i class="fa-solid fa-shield-halved project-icon"></i>
+            </div>
+            <div class="project-info">
+              <p class="project-index">02 / CYBERSECURITY</p>
+              <h3>SECURITY LAB</h3>
+              <p>
+                A growing hands-on lab built around Linux, network reconnaissance,
+                web security testing, packet analysis and CTF-style problem solving.
+              </p>
+              <div class="tags"><span>KALI LINUX</span><span>NMAP</span><span>BURP</span><span>WIRESHARK</span></div>
+            </div>
+            <a class="project-arrow" href="#contact" aria-label="Ask about security lab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+
+          <article class="project-card reveal tilt" data-project="03">
+            <div class="project-image project-violet">
+              <div class="csi-wave"><span></span><span></span><span></span><span></span><span></span></div>
+              <i class="fa-solid fa-wifi project-icon"></i>
+            </div>
+            <div class="project-info">
+              <p class="project-index">03 / EMBEDDED</p>
+              <h3>ESP32 CSI LAB</h3>
+              <p>
+                Experiments with Channel State Information on ESP32, turning raw wireless
+                measurements into movement-related signals and visual feedback.
+              </p>
+              <div class="tags"><span>ESP32</span><span>ESP-IDF</span><span>PYTHON</span><span>CSI</span></div>
+            </div>
+            <a class="project-arrow" href="#contact" aria-label="Ask about ESP32 CSI lab"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills">
+      <div class="section-number">03</div>
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">TOOLKIT</p>
+          <h2>THE<br><span>STACK.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-panel reveal">
+            <span class="skill-no">01</span>
+            <i class="fa-solid fa-code"></i>
+            <h3>DEVELOPMENT</h3>
+            <p>Python, HTML, CSS, JavaScript, Kotlin, FastAPI</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-no">02</span>
+            <i class="fa-solid fa-microchip"></i>
+            <h3>HARDWARE</h3>
+            <p>ESP32, sensors, ADC modules, IoT data acquisition</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-no">03</span>
+            <i class="fa-solid fa-user-secret"></i>
+            <h3>SECURITY</h3>
+            <p>Kali Linux, Nmap, Burp Suite, Wireshark, CTF workflows</p>
+          </div>
+          <div class="skill-panel reveal">
+            <span class="skill-no">04</span>
+            <i class="fa-solid fa-brain"></i>
+            <h3>INTELLIGENCE</h3>
+            <p>Machine learning concepts, Random Forest, data-driven prediction</p>
+          </div>
+        </div>
+
+        <div class="marquee-wrap">
+          <div class="marquee">
+            <span>BUILD</span><b>✦</b><span>SECURE</span><b>✦</b><span>EXPERIMENT</span><b>✦</b>
+            <span>LEARN</span><b>✦</b><span>REPEAT</span><b>✦</b>
+            <span>BUILD</span><b>✦</b><span>SECURE</span><b>✦</b><span>EXPERIMENT</span><b>✦</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="statement">
+      <div class="statement-bg parallax" data-speed="0.18"></div>
+      <div class="container reveal">
+        <p class="eyebrow">THE MINDSET</p>
+        <h2>DON'T BUILD<br><span>ORDINARY.</span></h2>
+        <p>Curiosity is cheap. Shipping is the test.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-number">04</div>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow reveal">GET IN TOUCH</p>
+            <h2 class="reveal">LET'S MAKE<br><span>SOMETHING.</span></h2>
+            <p class="reveal contact-lead">
+              Have a project, collaboration, internship opportunity or just a technically
+              interesting idea? Send it.
+            </p>
+
+            <div class="contact-links reveal">
+              <a href="mailto:gakshaghu@gmail.com" class="contact-line magnetic">
+                <span><i class="fa-solid fa-envelope"></i> EMAIL</span>
+                <strong>gakshaghu@gmail.com</strong>
+              </a>
+              <a href="tel:+918547469184" class="contact-line magnetic">
+                <span><i class="fa-solid fa-phone"></i> PHONE</span>
+                <strong>+91 8547469184</strong>
+              </a>
+              <a href="https://www.instagram.com/solaswin?stkn=MXBhaXdxNG9xOGtnZg==" target="_blank" rel="noopener" class="contact-line magnetic">
+                <span><i class="fa-brands fa-instagram"></i> INSTAGRAM</span>
+                <strong>@solaswin</strong>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-art reveal tilt">
+            <img src="assets/contact.png" alt="BATRECON contact artwork">
+            <div class="contact-stamp">AVAILABLE<br>FOR<br>OPPORTUNITIES</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">BAT<span>_</span>RECON</span>
+        <p>© 2026 ASWIN KRISHNAN. BUILT FROM SCRATCH.</p>
+      </div>
+      <a href="#home" class="back-top magnetic">BACK TO TOP <i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
